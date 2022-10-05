@@ -6,23 +6,24 @@
  */
 void free_stack(stack_t *head)
 {
-stack_t *temp;
+	stack_t *temp;
 
-temp = head;
-while (head)
-{
-temp = head->next;
-free(head);
-head = temp;
+	temp = head;
+	while (head)
+	{
+		temp = head->next;
+		free(head);
+		head = temp;
+	}
 }
-}
+
 /**
- * * f_stack - function that prints the top
- * * @head: head of stack
- * * @counter: line count
- * *
- * * Return: nothing
- * */
+ * f_stack - function that prints the top
+ * @head: head of stack
+ * @counter: line count
+ *
+ * Return: nothing
+ */
 void f_stack(stack_t **head, unsigned int counter)
 {
 	(void)head;
