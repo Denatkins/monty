@@ -17,12 +17,11 @@ head = temp;
 }
 }
 /**
- * * f_stack - function that prints the top
- * * @head: head of stack
- * * @counter: line count
- * *
- * * Return: nothing
- * */
+ * f_stack - function that prints the top
+ * @head: head of stack
+ * @counter: line count
+ * Return: nothing
+ */
 void f_stack(stack_t **head, unsigned int counter)
 {
 	(void)head;
